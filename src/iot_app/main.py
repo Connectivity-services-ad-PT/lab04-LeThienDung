@@ -187,7 +187,7 @@ def next_reading_id() -> str:
     today = datetime.now(timezone.utc).strftime("%Y%m%d")
     return f"R-{today}-{len(READINGS) + 1:04d}"
 
-
+@app.head("/health")
 @app.get("/health", response_model=HealthResponse)
 def health() -> HealthResponse:
     return HealthResponse(
