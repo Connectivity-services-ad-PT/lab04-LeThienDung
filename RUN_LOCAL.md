@@ -1,4 +1,4 @@
-# RUN_LOCAL.md – Hướng dẫn chạy Lab 04
+<!-- # RUN_LOCAL.md – Hướng dẫn chạy Lab 04
 
 Tài liệu này giúp người khác clone repo sạch và chạy lại service trong Docker.
 
@@ -89,4 +89,15 @@ make build
 make run
 make test-docker
 make stop
-```
+``` -->
+
+
+# Hướng dẫn chạy AI Vision Service Local (Lab 04)
+
+Để chạy và kiểm thử service trên môi trường local, vui lòng làm theo 4 bước sau:
+
+**Bước 1: Cài đặt yêu cầu**
+- Đảm bảo máy tính đã cài đặt sẵn **Docker Desktop** và **Node.js** (để chạy Newman).
+- Mở terminal tại thư mục gốc của dự án và chạy lệnh cài đặt thư viện test:
+```bash
+  npm install

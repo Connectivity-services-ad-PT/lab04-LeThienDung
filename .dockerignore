@@ -1,21 +1,61 @@
+# .git
+# .github
+# .venv
+# __pycache__
+# *.pyc
+# *.pyo
+# *.pyd
+# .Python
+# .env
+# .env.*
+# !.env.example
+# node_modules
+# reports
+# *.log
+# .DS_Store
+# .cache
+# .pytest_cache
+# dist
+# build
+# .coverage
+# htmlcov
+
+# Git and GitHub
 .git
 .github
+
+# Python environment and cache
 .venv
 __pycache__
 *.pyc
 *.pyo
 *.pyd
 .Python
+
+# Environment variables (giữ lại file mẫu)
 .env
 .env.*
 !.env.example
+
+# Node.js (dùng cho Postman/Newman test, không cần cho vào image của Python service)
 node_modules
+
+# Logs and reports
 reports
 *.log
+
+# OS generated files
 .DS_Store
+
+# Caches and builds
 .cache
 .pytest_cache
 dist
 build
 .coverage
 htmlcov
+
+# Ignore training data / large datasets (nếu có)
+# Nhưng TUYỆT ĐỐI KHÔNG ignore file model (.pt, .onnx) vì container cần nó để chạy AI Vision
+data/
+datasets/
